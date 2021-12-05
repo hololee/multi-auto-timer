@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2B2B"
+    tools:context=".ListActivity">
+
+
+
+    <TextView
+        android:id = "@+id/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "일정 목록"
+        android:textColor = "#E3E442"
+        android:textSize = "21dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:layout_marginTop="33dp"
+        android:id = "@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_button"
+        android:layout_marginBottom="15dp">
+
+
+    </ListView>
+
+
+    <Button
+        android:id = "@+id/font_button"
+        android:layout_marginLeft="18dp"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:background="@drawable/selector_font"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_above="@+id/xmladview"
+        />
+
+    <Button
+        android:layout_above="@+id/xmladview"
+        android:id = "@+id/add_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_add"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"/>
+
+    <com.fsn.cauly.CaulyAdView xmlns:app="http://schemas.android.com/apk/res/com.hanstudio.timer.multiautotimer"
+        android:id="@+id/xmladview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        app:appcode="K9J29JFh"
+        app:effect="RightSlide"
+        app:dynamicReloadInterval="true"
+        app:reloadInterval="20"
+        app:bannerHeight="Fixed"
+        />
+
+</RelativeLayout>

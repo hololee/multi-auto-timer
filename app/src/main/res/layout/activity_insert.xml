@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2B2B"
+    tools:context=".ListActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="적용 시간 설정"
+        android:textColor="#E3E442"
+        android:textSize="21dp" />
+
+        <RelativeLayout
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="15dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/option_time_back"
+                android:scaleType="fitXY" />
+
+            <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="00:00"
+            android:textColor="#2A2B2B"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id = "@+id/after_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time"
+            android:layout_centerVertical="true"
+            android:textColor="#2A2B2B"
+            android:textSize="30dp"
+
+            android:text = "후"/>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/selector_minute" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/button1"
+            android:background="@drawable/selector_minute2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/button2"
+            android:background="@drawable/selector_half_hour" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:background="@drawable/selector_hour" />
+
+
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/back1"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="블루투스"
+            android:textColor="#E3E442"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/box1"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/un_checked" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list1">
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="재생중 음악 정지"
+            android:textColor="#E3E442"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/box2"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/un_checked" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list2">
+
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="진동모드, 미디어 볼륨 off"
+            android:textColor="#E3E442"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/box3"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/un_checked" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/list4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list3">
+
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="비행기 모드"
+            android:textColor="#E3E442"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/box4"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/un_checked" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/list4">
+
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="WI-FI"
+            android:textColor="#E3E442"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/box5"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text6"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/un_checked" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/selector_ok" />
+
+
+</RelativeLayout>

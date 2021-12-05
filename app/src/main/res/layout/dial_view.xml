@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+
+
+        <ImageView
+            android:id = "@+id/back"
+            android:layout_width="250dp"
+            android:layout_height="92dp"
+            android:src = "@drawable/dial_back"
+            android:layout_centerHorizontal="true"/>
+
+       <RelativeLayout
+           android:layout_width="250dp"
+           android:layout_height="40dp"
+           android:layout_centerHorizontal="true"
+           android:layout_alignBottom="@+id/back"
+           >
+
+           <ImageView
+               android:id = "@+id/ok"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentBottom="true"
+               android:layout_width="122.5dp"
+               android:layout_height="38dp"
+               android:src = "@drawable/dial_selector_yes"/>
+
+           <ImageView
+               android:id = "@+id/no"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_width="122.5dp"
+               android:layout_height="38dp"
+               android:src = "@drawable/dial_selector_no"/>
+
+
+
+
+       </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
