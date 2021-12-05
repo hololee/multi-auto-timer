@@ -1,6 +1,6 @@
 # multi-auto-timer
 
-`updated` : 2016년 6월 9일   
+`updated` : 2018년 11월 20일   
 `status` : [product](https://play.google.com/store/apps/details?id=com.hanstudio.timer.multiautotimer)
 
 
